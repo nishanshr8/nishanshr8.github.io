@@ -48,6 +48,7 @@ h1 {
 
     >.row {
         height: 100%;
+        width: 100%;
     }
 }
 
@@ -61,9 +62,14 @@ h1 {
 }
 
 .fancy-blocks {
-    height: 300px;
     width: 230px;
+    max-width: 100%;
+    padding-top: 100%;
     position: relative;
+    // @include media-breakpoint-down(sm) { 
+    //     height: 300px;
+    //     margin: 20px auto;
+    //  }
 }
 
 .fancy-blocks .fb {
@@ -75,7 +81,10 @@ h1 {
 .fancy-blocks .fb-main {
     border: 15px solid var( --color-violet );
     height: 100%;
-    position: relative;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
     z-index: 5;
     opacity: .85;
 }

@@ -40,7 +40,8 @@ h1 {
   color: var(--color-secondary);
   min-height: 100vh; }
   .intro-content-block > .row {
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
 
 .np-content-block {
   padding: 60px 40px; }
@@ -50,8 +51,9 @@ h1 {
   padding-right: 50px; }
 
 .fancy-blocks {
-  height: 300px;
   width: 230px;
+  max-width: 100%;
+  padding-top: 100%;
   position: relative; }
 
 .fancy-blocks .fb {
@@ -62,7 +64,10 @@ h1 {
 .fancy-blocks .fb-main {
   border: 15px solid var(--color-violet);
   height: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 5;
   opacity: .85; }
 
