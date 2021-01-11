@@ -1,0 +1,120 @@
+:root {
+  /* color*/
+  --sienna: #230903;
+  --dim-gray: #656256;
+  --color-primary: #9ebc9f;
+  --color-primary2: #395b50;
+  --color-secondary: #d3b88c;
+  --color-background: #f4f2f3;
+  --color-font: #484349;
+  --color-lavendar: #aa7dce;
+  --color-violet: #3b429f;
+  --color-crayola: #7360b7;
+  font-size: 18px; }
+
+* {
+  box-sizing: content-box; }
+
+body {
+  background: var(--color-background);
+  color: var(--color-font);
+  font-family: 'Roboto Slab', serif; }
+
+h1, body h2, h3, h4, h5, h6 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600; }
+
+h1 {
+  font-size: 42px; }
+
+#intro-section {
+  background-color: var(--color-primary2); }
+
+.intro-content-block {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-secondary);
+  min-height: 100vh; }
+  .intro-content-block > .row {
+    height: 100%; }
+
+.np-content-block {
+  padding: 60px 40px; }
+
+.intro-copy {
+  flex-grow: 1;
+  padding-right: 50px; }
+
+.fancy-blocks {
+  height: 300px;
+  width: 230px;
+  position: relative; }
+
+.fancy-blocks .fb {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.fancy-blocks .fb-main {
+  border: 15px solid var(--color-violet);
+  height: 100%;
+  position: relative;
+  z-index: 5;
+  opacity: .85; }
+
+.fb-1 {
+  top: -5%;
+  left: -5%;
+  z-index: 1;
+  background-color: var(--color-lavendar);
+  opacity: .75; }
+
+.fb-2 {
+  top: 5%;
+  left: 5%;
+  z-index: 2;
+  background-color: var(--color-crayola);
+  opacity: .75; }
+
+.hello-title {
+  text-transform: uppercase;
+  font-size: 80px; }
+
+.about-section {
+  background-color: var(--color-primary);
+  height: 100vh; }
+
+.contact-section {
+  background-color: #242424;
+  color: var(--color-background);
+  text-align: center; }
+  .contact-section .section-title {
+    color: var(--color-background); }
+    .contact-section .section-title:after {
+      background-color: var(--color-background); }
+
+.work-section {
+  height: 100vh; }
+
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: .5em;
+  color: var(--color-primary2);
+  margin-bottom: 1.5em; }
+  .section-title:after {
+    content: '';
+    background-color: var(--color-primary2);
+    height: 5px;
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0); }
